@@ -1,0 +1,9 @@
+@firstName,
+@lastName,
+@email,
+@mobile,
+@password,
+@dob,
+@createdAt,
+@updatedAt,
+@isActive
