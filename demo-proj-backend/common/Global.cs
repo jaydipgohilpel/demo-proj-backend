@@ -23,14 +23,6 @@ namespace demo_proj_backend.common
             return pRequest.CreateResponse((HttpStatusCode)pObjResponse.Status, pObjResponse);
         }
 
-        public static void Application_BeginRequest()
-        {
-            
-                HttpContext.Current.Response.AddHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-                HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", "*");
-                HttpContext.Current.Response.AddHeader("Access-Control-Allow-Headers", "X-Requested-With, Content-Type, Accept, X-Token");
-                HttpContext.Current.Response.AddHeader("Access-Control-Allow-Credentials", "true");
-                HttpContext.Current.Response.End();
-        }
+       
     }
 }
